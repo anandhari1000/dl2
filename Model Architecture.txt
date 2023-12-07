@@ -1,0 +1,81 @@
+Model Architecture:
+--------------------
+
+Model 1 (Basic CNN):
+
+Sequential model with convolutional layers, max-pooling layers, flattening, and dense layers.
+Simple architecture suitable for basic image classification tasks.
+Limited depth and complexity compared to more advanced architectures.
+
+Model 2 (VGG16 with Data Augmentation):
+
+Utilizes the VGG16 architecture with repeated 3x3 convolutional layers.
+Data augmentation applied during training to improve generalization.
+Deeper architecture compared to the basic CNN, potentially capturing more complex patterns.
+
+
+Training and Validation:
+--------------------------
+
+Model 1 (Basic CNN):
+
+Uses basic data augmentation through ImageDataGenerator.
+Training involves traditional CNN training procedures.
+Simpler training process suitable for straightforward tasks.
+
+Model 2 (VGG16 with Data Augmentation):
+
+Applies data augmentation during training using ImageDataGenerator.
+Leverages a more complex architecture (VGG16).
+Training pipeline involves both the augmentation of training data and the training of a deeper model.
+
+
+Evaluation Metrics:
+------------------
+
+Model 1 (Basic CNN):
+
+Evaluation based on accuracy and categorical crossentropy loss.
+Simpler model and evaluation metrics appropriate for basic tasks.
+
+Model 2 (VGG16 with Data Augmentation):
+
+Evaluation based on accuracy and categorical crossentropy loss.
+Additional complexity may require a more detailed examination, such as confusion matrices or class-specific metrics.
+
+Documentation:
+--------------
+
+Model 1 (Basic CNN):
+
+Chosen Model: Basic CNN architecture.
+Training Process: Simple data augmentation during training.
+Critical Findings: Accuracy achieved on the validation set is 73 percent
+
+Model 2 (VGG16 with Data Augmentation):
+
+Chosen Model: VGG16 architecture with data augmentation.
+Training Process: Data augmentation applied during training for improved generalization.
+Critical Findings: 84 percent Accuracy achieved on the validation set, potentially capturing more complex patterns.
+
+Summary:
+--------
+
+Model 1 (Basic CNN):
+
+
+Simplicity: Suitable for straightforward tasks.
+
+Resources: Requires fewer computational resources.
+
+Use Case: Basic image classification tasks with limited complexity.
+
+
+Model 2 (VGG16 with Data Augmentation):
+
+Complexity: Deeper architecture capturing more complex patterns.
+
+Generalization: Improved generalization through data augmentation.
+
+Use Case: Suitable for tasks where increased model complexity and generalization are desired.
+In summary, the choice between Model 1 and Model 2 depends on the complexity of your image classification task and the available resources. Model 2 may be more appropriate for tasks that require capturing intricate patterns, while Model 1 is suitable for simpler tasks with limited computational resources.

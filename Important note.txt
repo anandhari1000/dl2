@@ -1,0 +1,10 @@
+Important note:
+----------------
+
+train_n_validatoin run only once if u run that more than once in same folder location it regenerates inside the folders 
+we did not get required results.
+
+that is Keep on it generates new train set and validation sets inside the folder.
+
+If ir runs ones it correctly divides the 80 percent for train set and 20 percent for validation set in the required folders.
+
